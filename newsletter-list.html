@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-Medium.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-Medium'),
+                url('fonts/helvetica/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-Medium.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-Heavy.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-Heavy'),
+                url('fonts/helvetica/HelveticaNeueCyr-Heavy.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-Heavy.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-Heavy.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-HeavyItalic.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-HeavyItalic'),
+                url('fonts/helvetica/HelveticaNeueCyr-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-HeavyItalic.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-HeavyItalic.ttf') format('truetype');
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-Black.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-Black'),
+                url('fonts/helvetica/HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-Black.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-Black.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-UltraLightItalic.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-UltraLightItalic'),
+                url('fonts/helvetica/HelveticaNeueCyr-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-UltraLightItalic.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-UltraLightItalic.ttf') format('truetype');
+            font-weight: 200;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-BlackItalic.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-BlackItalic'),
+                url('fonts/helvetica/HelveticaNeueCyr-BlackItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-BlackItalic.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-BlackItalic.ttf') format('truetype');
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-ThinItalic.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-ThinItalic'),
+                url('fonts/helvetica/HelveticaNeueCyr-ThinItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-ThinItalic.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-ThinItalic.ttf') format('truetype');
+            font-weight: 100;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-MediumItalic.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-MediumItalic'),
+                url('fonts/helvetica/HelveticaNeueCyr-MediumItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-MediumItalic.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-MediumItalic.ttf') format('truetype');
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-LightItalic.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-LightItalic'),
+                url('fonts/helvetica/HelveticaNeueCyr-LightItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-LightItalic.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-LightItalic.ttf') format('truetype');
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-UltraLight.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-UltraLight'),
+                url('fonts/helvetica/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-BoldItalic.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-BoldItalic'),
+                url('fonts/helvetica/HelveticaNeueCyr-BoldItalic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-BoldItalic.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-BoldItalic.ttf') format('truetype');
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-Italic.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-Italic'),
+                url('fonts/helvetica/HelveticaNeueCyr-Italic.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-Italic.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-Italic.ttf') format('truetype');
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-Roman.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-Roman'),
+                url('fonts/helvetica/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-Roman.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-Roman.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-Bold.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-Bold'),
+                url('fonts/helvetica/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-Bold.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-Light.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-Light'),
+                url('fonts/helvetica/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-Light.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'HelveticaNeueCyr';
+            src: url('fonts/helvetica/HelveticaNeueCyr-Thin.eot');
+            src: local('fonts/helvetica/HelveticaNeueCyr-Thin'),
+                url('fonts/helvetica/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+                url('fonts/helvetica/HelveticaNeueCyr-Thin.woff') format('woff'),
+                url('fonts/helvetica/HelveticaNeueCyr-Thin.ttf') format('truetype');
+            font-weight: 100;
+            font-style: normal;
+        }
+        .flex-block {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        /*.flex-row {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .flex-between {
+            justify-content: space-between;
+        }
+
+        .flex-top {
+            align-items: flex-start;
+        }
+
+        .flex-middle {
+            align-items: center;
+        }
+
+        .flex-bottom {
+            align-items: flex-end;
+        }
+
+        .flex-left {
+            justify-content: flex-start;
+        }
+
+        .flex-right {
+            justify-content: flex-end;
+        }
+
+        .flex-around {
+            justify-content: space-around;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap;
+        }
+        .flex-nowrap {
+            flex-wrap: nowrap;
+        }*/
+
+        .flex-center {
+            justify-content: center;
+        }
+        
+        div.logo {
+            padding: 6px;
+            padding-right: 40px;
+            padding-left: 40px;
+            vertical-align: middle;
+            margin: 0;
+            text-align: center;
+            display: inline-block;
+        }
+
+        div.logo h2 {
+            font-size: 22px;
+            color: #CC6A00;
+            font-weight: 600;
+            padding: 4px;
+            margin: 0;
+            position: relative;
+        }
+
+        div.logo h2:after {
+            content: "";
+            width: 80%;
+            position: absolute;
+            height: 2px;
+            top: 100%;
+            left: 10%;
+            background-color: #CC6A00;
+        }
+
+        div.logo p {
+            font-weight: 300;
+            padding: 5px;
+            margin: 0px;
+            font-size: 15px;
+            color: rgb(37, 37, 37);
+        }
+    </style>
+    <style type="text/css">
+        .flex-block>*{
+            max-width: 350px;
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .root {
+            width: 100%;
+            background-color: white;
+            font-family: HelveticaNeueCyr;
+            margin: 0;
+        }
+
+        .main-block {
+            box-shadow: 0px 0px 5px rgba(90, 90, 90, 0.24);
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            max-width: 800px;
+            width: calc(100% - 40px);
+        }
+
+        .share {
+            display: inline-block;
+            padding: 0;
+            margin: 20px;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+
+        .share img {
+            width: 26px;
+            height: 26px;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        h2 {
+            font-weight: 450;
+            font-size: 24px;
+            margin: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            padding-top: 30px;
+            color: black;
+        }
+
+        h3 {
+            font-weight: 450;
+            font-size: 17px;
+            margin: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: black;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 15px;
+            margin: 30px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-weight: 400;
+            color: rgb(73, 73, 73);
+        }
+
+        b,
+        .bold {
+            font-weight: 550;
+            color: rgb(44, 44, 44);
+        }
+
+        hr {
+            padding: 0;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            outline: none;
+            height: 1px;
+            border: none;
+            background-color: rgba(51, 37, 172, 0.493);
+        }
+
+        .block-image {
+            max-width: 200px;
+            max-height: 200px;
+            margin: 0px;
+            display: block;
+            margin: auto;
+        }
+
+        .card {
+            padding: 20px;
+            background-color: white;
+            border: 0px solid #ACACAC;
+            border-radius: 4px;
+            width: calc(100% - 40px);
+            margin: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            box-shadow: 1px 1px 8px rgb(180, 180, 180);
+        }
+        .bright-button {
+            display: inline-block;
+            background-color: white;
+            border: 0px solid #F8A500;
+            padding: 17px;
+            font-size: 16px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.486);
+            color: white;
+            text-decoration: none;
+            font-weight: 400;
+            white-space: nowrap;
+            background-image: linear-gradient(150deg, rgb(252, 177, 29), rgb(216, 145, 2));
+            transition: all .2s linear;
+            -moz-transition: all .2s linear;
+            -webkit-transition: all .2s linear;
+        }
+
+        a {
+            color: #CC6A00;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="root">
+        <div class="main-block">
+            <div class="flex-block">
+                <div>
+                    <div class="logo">
+                        <h2>Страна талантов</h2>
+                        <p>Всероссийские конкурсы</p>
+                    </div>
+                </div>
+
+                <div style="white-space: nowrap; vertical-align: middle;">
+                    <a class="share" href="https://www.facebook.com/Школьное-движение-926602540835913" title="Facebook">
+                        <img src="http://olympforum.ru/images/facebook-icon.png" alt="facebook">
+                    </a>
+                    <a class="share" href="https://vk.com/shkolnoe_dvizenie" title="ВКонтакте">
+                        <img src="http://olympforum.ru/images/vk-icon.png" alt="VK">
+                    </a>
+                    <a class="share" href="https://www.ok.ru/group/53685997994129" title="Одноклассники">
+                        <img src="http://olympforum.ru/images/odnoklassniki-icon.png" alt="Odnoklassniki">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main-block">
+            <div style="max-width: 700px; margin: auto;">
+                <h2>Приглашаем к участию в конкурсах &laquo;Школьного движения&raquo;!</h2>
+                <p>Предлагаем школьникам младшего и среднего звена принять участие в одном из самых масштабных конкурсов.</p>
+                <p>К участию в конкурсе допускаются (без предварительного отбора) учащиеся 1–11х классов, оплатившие организационный взнос.</p>
+            </div>
+
+            <hr>
+            <div class="flex-block flex-row flex-center flex-middle">
+                <div style="text-align: left; max-width: 500px;">
+                    <h3>Конкурсы проводятся по следующим дисциплинам:</h3>
+                    <p class="bold">1-5 классы:</p>
+                    <p>Окружающий мир</p>
+                    <p class="bold">5-11 классы:</p>
+                    <p>Биология, География, История, Обществознание</p>
+                    <p class="bold">1-11 классы:</p>
+                    <p>Английский язык, Литература, Логика, Математика, Русский язык, Эрудит, Знаток, Ребус, Физкультура, ИЗО, Музыка, Технология, Книголюб, Биология, Гражданин, Грамматика, Программист, Турпоход, Эврика</p>
+                </div>
+                <div style="max-width: 200px;">
+                    <img class="block-image" src="http://olympforum.ru/images/children-near-the-board.png" alt="children-near-the-board">
+                </div>
+            </div>
+
+            <hr>
+            <div class="flex-block flex-row flex-center flex-middle">
+                <div style="text-align: left; max-width: 500px;">
+                    <h3>Награждение</h3>
+                    <p><span class="bold">Всем участникам</span>, без ограничения, предоставляется Сертификат участника конкурса «Страна талантов».</p>
+                    <p><span class="bold">Учителя</span>, задействованные в подготовке и проведении конкурса, получат Благодарственные грамоты.</p>
+                    <p><span class="bold">Школы</span>, представившие к участию более 15-ти человек, получат Благодарственные письма.</p>
+                    <p>Среди финалистов первых мест путем простой случайной выборки будут определены призеры конкурса, которым будут отправлены подарки: Планшеты и Медали. Десять школ с наиболее высоким рейтингом (по количеству баллов своих учащихся) получат главный приз Конкурса - Кубок Победителя.</p>
+                </div>
+                <div style="max-width: 200px;">
+                    <img class="block-image" src="http://olympforum.ru/images/children-with-cup.png" alt="children-with-cup">
+                </div>
+            </div>
+
+            <div style="text-align: center; padding: 20px;">
+                <a class="bright-button" href="http://olympforum.ru/">Принять участие!</a>
+            </div>
+
+            <div class="flex-block flex-row flex-middle flex-between" style="margin: 0px; margin-bottom: 0;">
+                <div>
+                    <p style="display: inline-block; text-align: left;"><span class="bold">Наши контакты:</span><br>
+                        help@olympforum.ru<br>
+                        +7 (903) 949 55 41<br>
+                        +7 (923) 00 483 02
+                    </p>
+                </div>
+                <div style="max-width: 400px;">
+                    <p>Если Вы больше не хотите получать от нас письма, Вы можете <a href="http://olympforum.ru/unsubscribe-one-click.php">отписаться</a></p>
+                </div>
+            </div>
+            <div style="margin: auto; text-align: center;">
+                <a class="share" href="https://www.facebook.com/Школьное-движение-926602540835913" title="Facebook">
+                    <img src="http://olympforum.ru/images/facebook-icon.png" alt="facebook">
+                </a>
+                <a class="share" href="https://vk.com/shkolnoe_dvizenie" title="ВКонтакте">
+                    <img src="http://olympforum.ru/images/vk-icon.png" alt="VK">
+                </a>
+                <a class="share" href="https://www.ok.ru/group/53685997994129" title="Одноклассники">
+                    <img src="http://olympforum.ru/images/odnoklassniki-icon.png" alt="Odnoklassniki">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

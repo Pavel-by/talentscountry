@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteRule about$ /about.php [L]
+RewriteRule admin/add-permit/?$ /admin-add-permit.php [L]
+RewriteRule ^(?:.*\/)?([^\/]*\.css)$ styles/$1 [L]
+RewriteRule ^.*((?:images|files|fonts|scripts)\/.*)$ $1 [L]
+RewriteRule archive$ /archive.php [L]
+RewriteRule 404$ /404.php [L]
