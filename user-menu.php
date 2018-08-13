@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_DISABLED or session_status() == PHP_SESSION_
 <div id="left-menu">
     <div class="information-menu">
         <ul>
-            <li><a href="logout.php" class="left-menu-button">Выход</a></li>
+            <li><a href="logout.php" class="input input-submit center full-width">Выход</a></li>
             <li><a href="user-info.php" class="information-menu-item">Информация</a></li>
             <li><a href="user-payment.php" class="information-menu-item">Оплата</a></li>
             <li><a href="user-download.php" class="information-menu-item">Скачать задания</a></li>

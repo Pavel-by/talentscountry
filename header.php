@@ -15,17 +15,18 @@
     <div class="limit-block flex-block flex-row flex-middle flex-between">
         <a href="index.php" class="logo-link" style="display: inline-block;">
             <div class="logo flex-block flex-row flex-middle flex-nowrap">
-                <img src="images/logo.png">
+                <img src="images/logo.jpg">
+                <h2>Страна талантов</h2>
             </div>
         </a>
-        <ul class="center-flex-block">
+        <ul class="flex-block flex-middle flex-row flex-nowrap flex-right">
             <li><a href="#" onclick="return openMenu();" class="open-menu-button menu-item" style="padding-right: 100px;">Меню</a></li>
             <li><a href="about.php" class="menu-item big-screen">О проекте</a></li>
             <li><a href="contacts.php" class="menu-item big-screen">Контакты</a></li>
             <?php
                 echo (
                     isset($_SESSION['name']) 
-                    ?   "<li><a href=\"user-info.php\" class=\"menu-item big-screen\">" . $_SESSION['name'] . "</a></li>" 
+                    ?   "<li><a href=\"user-info.php\" class=\"menu-item big-screen\">" . $_SESSION['name'] . "</a></li>"
                     :   "<li><a href=\"login.php\" class=\"menu-item big-screen\">Вход</a></li>"
                         . "<li><a href=\"registration.php\" class=\"menu-item big-screen\">Регистрация</a></li>"
                 );

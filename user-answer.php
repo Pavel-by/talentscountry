@@ -159,7 +159,7 @@ include( "header.php" );
                     <div class="card">
                         <div>
                             <h2>Загрузить бланки</h2>
-                            <div class="input-file-parent submit-button inline-block">
+                            <div class="input-file-parent input input-submit inline-block">
                                 <input type="file" name="files" id="input-file" multiple> Выбрать
                                 файлы
                             </div>
@@ -168,7 +168,7 @@ include( "header.php" );
 
                         </div>
                         <div>
-                            <input type="button" class="submit-button" id="send-files"
+                            <input type="button" class="input input-submit" id="send-files"
                                    value="Загрузить файлы">
                         </div>
                     </div>

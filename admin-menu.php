@@ -2,10 +2,11 @@
 <div id="left-menu">
     <div class="information-menu">
         <ul>
-            <li><a href="logout.php" class="left-menu-button">Выход</a></li>
+            <li><a href="logout.php" class="input-submit input full-width center">Выход</a></li>
             <li><a href="admin-add-permit.php" class="information-menu-item">Изменить допуск</a></li>
             <li><a href="admin-tables.php" class="information-menu-item">Скачать таблицы</a></li>
             <li><a href="admin-update-results.php" class="information-menu-item">Обновить результаты</a></li>
+            <li><a href="admin-add-administrator.php" class="information-menu-item">Добавить администратора</a></li>
         </ul>
     </div>
 </div>
@@ -30,6 +31,7 @@
             <li><a href="admin-add-permit.php" class="information-menu-item">Изменить допуск</a></li>
             <li><a href="admin-tables.php" class="information-menu-item">Скачать таблицы</a></li>
             <li><a href="admin-update-results.php" class="information-menu-item">Обновить результаты</a></li>
+            <li><a href="admin-add-administrator.php" class="information-menu-item">Добавить администратора</a></li>
             <li><a href="logout.php" class="information-menu-item">Выйти</a></li>
         </ul>
     </div>

@@ -81,8 +81,8 @@ include( "header.php" );
                                 if ( $date > $currentDate ) {
                                     $_SESSION[ 'restore-userkey' ] = $rez[ 'userkey' ];
                                     $_SESSION[ 'restorekey' ]      = $restore_key;
-                                    echo '<div><input type="password" value="" placeholder="Новый пароль" name="password" class="text-input"></div>' .
-                                        '<div><input type="submit" value="Далее" class="submit-button"></div>';
+                                    echo '<div><input type="password" value="" placeholder="Новый пароль" name="password" class="input input-text"></div>' .
+                                        '<div><input type="submit" value="Далее" class="input input-submit"></div>';
                                 } else {
                                     echo "Ссылка на восстановление пароля доступна всего сутки. Вы воспользовались устаревшей ссылкой.";
                                 }
@@ -94,8 +94,8 @@ include( "header.php" );
                             echo "<p>Ошибка при подключении к базе данных. Попробуйте перезагрузить страницу.</p>";
                         }
                     } else {
-                        echo '<div><input type="email" value="" placeholder="Ваша почта" name="email" class="text-input"></div>' .
-                            '<div><input type="submit" value="Далее" class="submit-button"></div>';
+                        echo '<div><input type="email" value="" placeholder="Ваша почта" name="email" class="input input-text"></div>' .
+                            '<div><input type="submit" value="Далее" class="input input-submit"></div>';
                     }
                     ?>
 

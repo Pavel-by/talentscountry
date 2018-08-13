@@ -892,3 +892,14 @@
 {"message":"\u041d\u0435 \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u043e\u0432\u0430\u043d.","description":"Unauthorized","error":"UnauthorizedError"}
 2018-07-09 05:23:47: ERROR: GET HTTP CODE 401 FOR PATH /answer/id=22_time=2018-07-09+05-23-47.zip
 
+2018-08-08 16:24:39: ERROR: CREATE FOLDER HTTP CODE 401 FOR PATH "https://cloud-api.yandex.net/v1/disk/resources?path=payment"
+{"message":"\u041d\u0435 \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u043e\u0432\u0430\u043d.","description":"Unauthorized","error":"UnauthorizedError"}
+2018-08-08 16:26:45: ERROR: CREATE FOLDER HTTP CODE 401 FOR PATH "https://cloud-api.yandex.net/v1/disk/resources?path=payment"
+{"message":"\u041d\u0435 \u0430\u0432\u0442\u043e\u0440\u0438\u0437\u043e\u0432\u0430\u043d.","description":"Unauthorized","error":"UnauthorizedError"}
+2018-08-09 16:32:11: ERROR: SEND MAIL ERROR: The following From address failed: newsletter@konkurs-5erka.ru : MAIL FROM command failed,LTD BeGet: message sending is disabled for mailbox
+'newsletter@konkurs-5erka.ru'. Please, contact support@beget.ru
+,550,SMTP server error: MAIL FROM command failed Detail: LTD BeGet: message sending is disabled for mailbox
+'newsletter@konkurs-5erka.ru'. Please, contact support@beget.ru
+ SMTP code: 550SMTP server error: MAIL FROM command failed Detail: LTD BeGet: message sending is disabled for mailbox
+'newsletter@konkurs-5erka.ru'. Please, contact support@beget.ru
+ SMTP code: 550

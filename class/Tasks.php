@@ -18,6 +18,7 @@ class Tasks
                 if ($file == "." or $file == "..") continue;
                 $class[] = $this->findInt($file);
             }
+            $class = array_unique($class);
             sort($class);
             $this->tasks[] = array(
                 "eng" => $eng,

@@ -25,7 +25,7 @@
                     <div>
                         <div class="download">
                             <img src="images/download.png">
-                            <a href="files/Договор оферта.docx">Скачать &laquo;Договор оферта.docx&raquo;</a>
+                            <a href="files/contract.docx">Скачать &laquo;Договор оферта.docx&raquo;</a>
                         </div>
                         <div class="card" style="font-size: 17px !important; color: rgb(36, 36, 36) !important;">
                             <p>В соответствии с п. 2 ст. 1 и ст. 12 Федерального закона "О лицензировании отдельных видов деятельности" конкурсная деятельность лицензированию не подлежит.</p>

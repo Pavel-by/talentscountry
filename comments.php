@@ -74,11 +74,11 @@
                             <h3>Добавить отзыв</h3>
                             <div>
                                 <p class='important-text'>Внимание! Один пользователь может добавить только ОДИН отзыв. Потом можно лишь редактировать предыдущий.</p>
-                                <textarea name='text' class="text-input" style="height: 200px"><?php echo $text; ?></textarea>
+                                <textarea name='text' class="input input-text full-width" style="height: 200px"><?php echo $text; ?></textarea>
                             </div>
                             <div>
-                                <input type='submit' value='<?php echo (strlen($text) == 0 ? "Добавить отзыв" : "Обновить"); ?>' class='submit-button'>
-                                <input type="<?php echo (strlen($text) == 0 ? "hidden" : "submit"); ?>" value="Удалить отзыв" class="submit-button" onclick="$('textarea[name=text]').val('');">
+                                <input type='submit' value='<?php echo (strlen($text) == 0 ? "Добавить отзыв" : "Обновить"); ?>' class='input input-submit'>
+                                <input type="<?php echo (strlen($text) == 0 ? "hidden" : "submit"); ?>" value="Удалить отзыв" class="input input-submit" onclick="$('textarea[name=text]').val('');">
                             </div>
                         </form>
                         <?php

@@ -4,7 +4,7 @@
     error_reporting(E_ALL);
     include('scripts/check-autorization.php');
     require_once "scripts/common-functions.php";
-    require_once "system/constants.php";
+    include("system/configuration.php");
 
 
     include('system/db.php');
@@ -17,7 +17,7 @@
         $rez = mysqli_fetch_array($rez); 
         $registerDate = new DateTime($rez['registerdate']);
         $compareDate = new DateTime(date("Y-m-d H:i:s", strtotime("-5 days")));
-        $editable = (($registerDate > $compareDate) or (! constants::BLOCK_AFTER_FIVE_DAYS));
+        $editable = (($registerDate > $compareDate) or (! conf["block-after-five-days"]));
         $competitions = $rez['classes'];
         if (!$editable){
             $message = "<p class='important-text'>С момента регистрации прошло более 5 дней, изменение данных больше недоступно.</p>";
@@ -162,7 +162,7 @@
                     data.push({name: "competitions", value: JSON.stringify(taskPicker.getChosen())});
 
                     $.ajax({
-                        url: 'scripts/update-user-info-script.php',
+                        url: '/scripts/update-user-info-script.php',
                         data: $.param(data),
                         type: 'GET',
                         dataType: "JSON",
@@ -218,42 +218,42 @@
 
                         <h3 class="form-header">Фамилия, Имя, Отчество Организатора (Учителя) </h3>
                         <div>
-                            <input type="text" name="name" class="text-input" value="<?php echo htmlspecialchars($rez['name']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
+                            <input type="text" name="name" class="input input-text full-width" value="<?php echo htmlspecialchars($rez['name']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
                             <span class="input-error"></span>
                         </div>
                         <divider></divider>
 
                         <h3 class="form-header">Область/край (автономной округ, иное)</h3>
                         <div>
-                            <input type="text" name="region" class="text-input" value="<?php echo htmlspecialchars($rez['region']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
+                            <input type="text" name="region" class="input input-text full-width" value="<?php echo htmlspecialchars($rez['region']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
                             <span class="input-error"></span>
                         </div>
                         <divider></divider>
 
                         <h3 class="form-header">Город (село, поселок, хутор, деревня, иное)</h3>
                         <div>
-                            <input type="text" name="city" class="text-input" value="<?php echo htmlspecialchars($rez['city']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
+                            <input type="text" name="city" class="input input-text full-width" value="<?php echo htmlspecialchars($rez['city']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
                             <span class="input-error"></span>
                         </div>
                         <divider></divider>
 
                         <h3 class="form-header">Наименование и номер школы</h3>
                         <div>
-                            <input type="text" name="school" class="text-input" value="<?php echo htmlspecialchars($rez['school']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
+                            <input type="text" name="school" class="input input-text full-width" value="<?php echo htmlspecialchars($rez['school']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
                             <span class="input-error"></span>
                         </div>
                         <divider></divider>
 
                         <h3 class="form-header">Количество учителей (организаторов)</h3>
                         <div>
-                            <input type="text" name="teachers" class="text-input" value="<?php echo htmlspecialchars($rez['teachers']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
+                            <input type="text" name="teachers" class="input input-text full-width" value="<?php echo htmlspecialchars($rez['teachers']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
                             <span class="input-error"></span>
                         </div>
                         <divider></divider>
 
                         <h3 class="form-header">Количество участников</h3>
                         <div>
-                            <input type="text" name="participants" class="text-input" value="<?php echo htmlspecialchars($rez['participants']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
+                            <input type="text" name="participants" class="input input-text full-width" value="<?php echo htmlspecialchars($rez['participants']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
                             <span class="input-error"></span>
                         </div>
                         <divider></divider>
@@ -270,20 +270,20 @@
 
                         <h3 class="form-header">Электронный адрес</h3>
                         <div>
-                            <input type="text" name="email" class="text-input" value="<?php  echo htmlspecialchars($rez['email']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
+                            <input type="text" name="email" class="input input-text full-width" value="<?php  echo htmlspecialchars($rez['email']); ?>" <?php echo $editable ? "" : "disabled"; ?>>
                             <span class="input-error"></span>
                         </div>
                         <divider></divider>
 
                         <h3 class="form-header">Контактный телефон</h3>
                         <div>
-                            <input type="text" name="phone" class="text-input" value='<?php echo htmlspecialchars($rez['phone']); ?>' <?php echo $editable ? "" : "disabled"; ?>>
+                            <input type="text" name="phone" class="input input-text full-width" value='<?php echo htmlspecialchars($rez['phone']); ?>' <?php echo $editable ? "" : "disabled"; ?>>
                             <span class="input-error"></span>
                         </div>
                         <divider></divider>
 
                         <span class="input-error" id="form-error">Присутствуют ошибки при заполнении полей</span>
-                        <input type="submit" class="submit-button" value="Сохранить" <?php echo $editable ? "" : "disabled"; ?>>
+                        <input type="submit" class="input input-submit" value="Сохранить" <?php echo $editable ? "" : "disabled"; ?>>
                     </form>
 
                 </div>

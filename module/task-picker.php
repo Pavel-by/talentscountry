@@ -72,6 +72,8 @@
         function show() {
             var root = $("<div class='flex-block flex-column flex-left'>");
 
+            root.append($("<div style=\'margin: 5px; padding: 5px;\' class=\'flex-block flex-row flex-nowrap flex-middle flex-between\'>\n    <p>Название</p>\n    <p>Классы</p>\n</div>"))
+
             for (var i = 0; i < tasks.length; i++) {
                 root.append(createButton(tasks[i]));
             }
@@ -80,7 +82,12 @@
             message.show();
 
             function createButton(taskInfo) {
-                var root = $("<div class=\'flex-block flex-row flex-middle flex-left task-picker-competition\'>\n    <p class=\'task-picker-competition-name\'>" + taskInfo['rus'] + "</p>\n</div>");
+                var classes = "<span></span>";
+                if (taskInfo.class.length > 0) {
+                    console.log(taskInfo.class);
+                    classes = "<span>" + taskInfo.class.join(", ") + "</span>";
+                }
+                var root = $("<div class=\'flex-block flex-row flex-middle flex-between flex-nowrap task-picker-competition\'>\n    <p class=\'task-picker-competition-name\'>" + taskInfo['rus'] + "</p>\n" + classes + "</div>");
                 root.click(function () {
                     if (taskInfo['eng'] in chosen) {
                         $(this).removeClass('chosen');

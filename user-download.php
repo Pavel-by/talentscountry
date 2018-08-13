@@ -2,7 +2,7 @@
     include('scripts/check-autorization.php');
     include('scripts/update-userinfo.php');
     require_once 'scripts/error-script.php';
-    require_once 'system/constants.php';
+    require_once 'system/configuration.php';
 ?>
     <!DOCTYPE html>
     <html>
@@ -30,7 +30,7 @@
                 <div>
                     <h1 class="page-title">Скачать задания</h1>
                     <?php
-                        if (constants::PAYMENT_FOR_DOWNLOAD and (!isset($_SESSION['usertype']) or $_SESSION['usertype'] != 1)){
+                        if (conf["payment-for-download"] and (!isset($_SESSION['usertype']) or $_SESSION['usertype'] != 1)){
                             echo "<p class='important-text'>Прежде чем скачать задания, Вам необходимо <a href='user-payment.php'>загрузить</a> квитанцию об оплате. Она будет проверена в ручном режиме и в течение суток Вам откроют доступ к данному разделу.</p>";
                         }
                         else {

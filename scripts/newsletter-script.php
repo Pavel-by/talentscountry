@@ -1,13 +1,20 @@
 <?php
     ini_set ("display_errors", "1");
     error_reporting(E_ALL);
-    
+
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\SMTP;
+    //use PHPMailer\PHPMailer\PHPMailer;
+    //use PHPMailer\PHPMailer\Exception;
 
+    require_once ROOT . "/PHPMailer/src/PHPMailer.php";
+    require_once ROOT . "/PHPMailer/src/SMTP.php";
+    require_once ROOT . "/PHPMailer/src/Exception.php";
     include_once("error-script.php");
     include_once($_SERVER['DOCUMENT_ROOT'] . "/system/db.php");
-    require_once "C:/Users/mairo/vendor/autoload.php";
+    //require_once "C:/Users/Павел/vendor/autoload.php";
+    //include_once(ROOT . "/PHPMailer/src/PHPMailer.php");
 
     $maxConnectionCount = 0;
 
@@ -30,10 +37,10 @@
         private $auth			            = true;	// Авторизация на сервере SMTP. Если ее нет - false
         private $port			            = 25;	// Порт SMTP сервера
         private $from                       = "newsletter@konkurs-5erka.ru";
-        private $fromname		            = 'Конкурс "Пятерка"';	// Отображаемое имя отправителя
+        private $fromName		            = 'Конкурс "Пятерка"';	// Отображаемое имя отправителя
         private $replyto		            = array(
-                "address"	=> 'support@konkurs-5erka.ru',	// адрес почты для ответа
-                "name"		=> 'Конкурс "Пятерка"'	//отображаемое имя владельца ящика
+                "address"	=> 'help@stranatalantow.ru',	// адрес почты для ответа
+                "name"		=> 'Конкурс "Страна талантов"'	//отображаемое имя владельца ящика
         );
         private $notification	            = array(
                 "address"	=> '',	// Почта оповещения админа (не оповещать- оставить пустым)
@@ -158,7 +165,7 @@
             $sendedDBName = $this->sendedDBName;
 
             $From = $this->from;
-            $FromName = $this->fromname;
+            $FromName = $this->fromName;
             $Host = $this->host;
             $SMTPDebug = $this->debug;
             $DebugOutput = $this->debugoutput;
@@ -275,6 +282,40 @@
         function hasName($hasName = true) {
             $this->hasNameInTable = $hasName;
         }
+
+        /**
+         * @return string
+         */
+        public function getFrom()
+        {
+            return $this->from;
+        }
+
+        /**
+         * @param string $from
+         */
+        public function setFrom($from)
+        {
+            $this->from = $from;
+        }
+
+        /**
+         * @return string
+         */
+        public function getFromName()
+        {
+            return $this->fromName;
+        }
+
+        /**
+         * @param string $fromName
+         */
+        public function setFromName($fromName)
+        {
+            $this->fromName = $fromName;
+        }
+
+
     }
     
     

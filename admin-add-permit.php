@@ -78,10 +78,10 @@ include( "scripts/check-admin-permissions.php" )
                 text += "</table>";
 
                 if (data.usertype == 0) {
-                    text += "<input type='button' class='submit-button' value='Открыть доступ' onclick='changeUserType(" + data.id + ", 1);'>";
+                    text += "<input type='button' class='input input-submit' value='Открыть доступ' onclick='changeUserType(" + data.id + ", 1);'>";
                 }
                 else if (data.usertype == 1) {
-                    text += "<input type='button' class='submit-button' value='Запретить доступ' onclick='changeUserType(" + data.id + ", 0);'>";
+                    text += "<input type='button' class='input input-submit' value='Запретить доступ' onclick='changeUserType(" + data.id + ", 0);'>";
                 }
             }
             document.getElementById("result").innerHTML = text;
@@ -182,8 +182,8 @@ include( "header.php" );
                 <div class="card">
                     <form id="form-get-info">
                         <h3>Введите ID пользователя</h3>
-                        <input type="text" name="id" value="" class="text-input" autocomplete="off">
-                        <input type="submit" value="Поиск" class="submit-button">
+                        <input type="text" name="id" value="" class="input input-text" autocomplete="off">
+                        <input type="submit" value="Поиск" class="input input-submit">
                     </form>
                 </div>
 

@@ -1,7 +1,7 @@
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/yandex-class.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/error-script.php';
-    use Yandex\Disk\DiskClient;
+    //use Yandex\Disk\DiskClient;
 
     @session_start();
     include($_SERVER['DOCUMENT_ROOT'] . '/system/db.php');
@@ -91,92 +91,6 @@
                 $arr['texterror'] = "Ошибка подключения к базе данных";
                 log::e(mysqli_error($link));
             }
-            /*echo "\r\nCopy from " . $file['tmp_name']
-                ."\r\nto " . $filename;
-            
-            
-            $path = urlencode("/newfolder/");
-            $url = "https://cloud-api.yandex.net/v1/disk/resources/upload?path=%2Fnewfolder%2F" . basename($file['name'])
-                    . "&overwrite=true";
-            
-            $ch = curl_init();
-            
-            curl_setopt($ch, CURLOPT_URL, $url); 
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_HTTPGET, 1);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                'Authorization: OAuth AQAAAAAitvidAAS8bYO7ZUQy-U0gpaE0Yu4ixsQ',
-                'Content-Type: application/json; charset=utf-8'
-            ));
-            
-            $output = curl_exec($ch);  
-            $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-            log::d("GET HTTP CODE " . $http_code . " FOR FILE " . $file['name']);
-            echo "GET HTTP CODE " . $http_code . " FOR FILE " . $file['name'];
-            curl_close($ch);
-            
-            
-            
-            $outarr = json_decode($output, true);
-            if ($http_code == '200'){
-                
-                $cfile = getCurlValue($filename, mime_content_type($filename), $file['name']);
-                
-               //NOTE: The top level key in the array is important, as some apis will insist that it is 'file'.
-                $data = array('file' => $cfile);
-
-                $fp = fopen($filename, 'r');
-                    
-                $ch = curl_init();
-                SendError($outarr['href']);
-                $target_url = $outarr['href'];                
-                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);
-                curl_setopt($ch, CURLOPT_HEADER, false);
-                curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-                    'Authorization: OAuth AQAAAAAitvidAAS8bYO7ZUQy-U0gpaE0Yu4ixsQ'
-                ));
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                curl_setopt($ch, CURLOPT_BINARYTRANSFER, 1);
-                curl_setopt($ch, CURLOPT_URL, $target_url);
-                
-                curl_setopt($ch, CURLOPT_PUT, 1);
-                curl_setopt($ch, CURLOPT_INFILE, $fp);
-                curl_setopt($ch, CURLOPT_INFILESIZE, filesize($filename));
-
-                log::d("START PUT REQUEST");
-                $result=curl_exec($ch);
-                log::d("END PUT REQUEST");
-                $header_info = curl_getinfo($ch,CURLINFO_HEADER_OUT);
-                $header_size = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
-                
-                $header = substr($result, 0, $header_size);
-                $body = substr($result, $header_size);
-                echo "\r\nPUT HTTP CODE: " . curl_getinfo($ch, CURLINFO_HTTP_CODE) . "\r\n";
-
-                if (curl_errno($ch)) {
-                    
-                    $msg = curl_error($ch);
-                }
-                else {
-                
-                    $msg = 'File uploaded successfully.';
-                }
-                
-                curl_close ($ch);
-                
-                $return = array('msg' => $msg);
-                
-                SendError(json_encode($return));
-                
-                SendError('http://c91309yz.beget.tech/' . $filename);                
-            }
-            else{
-                SendError(var_dump($outarr));
-            }
-
-            SendError($output);
-
-            var_export($output);*/
         }
     }
 

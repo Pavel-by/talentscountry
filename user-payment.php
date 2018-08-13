@@ -95,7 +95,7 @@
             function ContinueLoading(){
                 if (files.length > 0){
                     if (messageWindow == null){
-                        messageWindow = new Message({header: 'Пожалуйста, подождите', text: 'Загрузка файла ' + files[0].name, false);
+                        messageWindow = Message.create({header: 'Пожалуйста, подождите', text: 'Загрузка файла ' + files[0].name, closeable: false});
                     }
                     messageWindow.setContent('Загрузка файла ' + files[0].name);
                     LoadFile(files[0]);
@@ -146,7 +146,7 @@
                         <div class="card">
                             <div>
                                 <h2>Загрузить документы</h2>
-                                <div class="input-file-parent submit-button inline-block">
+                                <div class="input-file-parent input input-submit inline-block">
                                     <input type="file" name="files" id="input-file" multiple> Выбрать файлы
                                 </div>
                             </div>
@@ -154,7 +154,7 @@
 
                             </div>
                             <div>
-                                <input type="button" class="submit-button" id="send-files" value="Загрузить файлы">
+                                <input type="button" class="input input-submit" id="send-files" value="Загрузить файлы">
                             </div>
                         </div>
                     </div>

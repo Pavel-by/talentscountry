@@ -92,16 +92,18 @@ include( 'header.php' );
                   style="display: inline-block; width: 400px; max-width: 100%; padding-top: 10px;">
                 <h2>Вход</h2>
                 <div>
-                    <input type="text" placeholder="E-mail" name="email" class="text-input">
+                    <label>Email</label>
+                    <input type="text" placeholder="E-mail" name="email" class="input full-width input-text">
                     <span class="input-error"></span>
                 </div>
                 <div>
-                    <input type="password" placeholder="Пароль" name="password" class="text-input">
+                    <label>Пароль</label>
+                    <input type="password" placeholder="Пароль" name="password" class="input full-width input-text">
                     <span class="input-error"></span>
                 </div>
                 <span class="input-error"
                       id="form-error">Присутствуют ошибки при заполнении полей</span>
-                <input type="submit" class="submit-button" value="Войти">
+                <input type="submit" class="input input-submit" value="Войти">
                 <p class="left">Еще не зарегистрированы? <a href="registration.php">Зарегистрироваться</a>
                 </p>
             </form>

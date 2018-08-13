@@ -46,14 +46,14 @@
                     <p>На этой страничке Вы можете ознакомиться с НАГРАДНЫМИ МАТЕРИАЛАМИ конкурса «Страна талантов».</p>
                     <table class="content-images-table">
                         <tr>
-                            <td><img src="/images/examples/small/1.jpg" group="sertificate" indexInGroup='0'></td>
-                            <td><img src="/images/examples/small/2.jpg" group="sertificate" indexInGroup='1'></td>
-                            <td><img src="/images/examples/small/3.jpg" group="sertificate" indexInGroup='2'></td>
+                            <td><img src="/files/diploma/small/blagodarnost_za_organisatsiy.png" group="sertificate" indexInGroup='0'></td>
+                            <td><img src="/files/diploma/small/blagodarnost_za_podgotovky_pobeditela.png" group="sertificate" indexInGroup='1'></td>
+                            <td><img src="/files/diploma/small/diplom_1.png" group="sertificate" indexInGroup='2'></td>
                         </tr>
                         <tr>
-                            <td><img src="/images/examples/small/7.jpg" group="sertificate" indexInGroup='3'></td>
-                            <td><img src="/images/examples/small/5.jpg" group="sertificate" indexInGroup='4'></td>
-                            <td><img src="/images/examples/small/4.jpg" group="sertificate" indexInGroup='5'></td>
+                            <td><img src="/files/diploma/small/diplom_2.png" group="sertificate" indexInGroup='3'></td>
+                            <td><img src="/files/diploma/small/diplom_3.png" group="sertificate" indexInGroup='4'></td>
+                            <td><img src="/files/diploma/small/sertifikat.png" group="sertificate" indexInGroup='5'></td>
                         </tr>
                     </table>
                     <p>Грамоты 1, 2, 3 степени и сертификаты участника заполняются автоматически, благодарности учителям заполняются <b>на месте организаторами конкурса самостоятельно</b>, во избежание недоразумений.</p>

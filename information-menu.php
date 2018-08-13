@@ -7,10 +7,12 @@
         <ul>
             <?php
             if (isset($_SESSION['userkey'])) {
-                echo "<li><a href=\"/user-info.php\" class=\"left-menu-button big-screen\">Аккаунт</a></li>";
-            }
-            else {
-                echo "<li><a href=\"/login.php\" class=\"left-menu-button big-screen\">Вход</a></li>";
+                echo "<li><a href=\"/user-info.php\" class=\"input full-width input-submit big-screen center\">Аккаунт</a></li>";
+            } else {
+                echo "<li class='flex-block flex-left flex-middle flex-nowrap flex-row'>"
+                    . "<a href=\"/login.php\" class=\"input full-width input-submit big-screen center\">Вход</a>"
+                    . "<a href=\"/registration.php\" class=\"input full-width input-submit big-screen center\">Регистрация</a>"
+                    . "</li>";
             }
             ?>
 
@@ -18,12 +20,12 @@
             <li><a href="about.php" class="information-menu-item small-screen">О проекте</a></li>
             <li><a href="contacts.php" class="information-menu-item small-screen">Контакты</a></li>
             <?php
-                echo (
-                    isset($_SESSION['name']) 
-                    ?   "<li><a href=\"user-info.php\" class=\"information-menu-item small-screen\">" . $_SESSION['name'] . "</a></li>" 
-                    :   "<li><a href=\"login.php\" class=\"information-menu-item small-screen\">Вход</a></li>"
-                        . "<li><a href=\"registration.php\" class=\"information-menu-item small-screen\">Регистрация</a></li>"
-                );
+            echo(
+            isset($_SESSION['name'])
+                ? "<li><a href=\"user-info.php\" class=\"information-menu-item small-screen\">" . $_SESSION['name'] . "</a></li>"
+                : "<li><a href=\"login.php\" class=\"information-menu-item small-screen\">Вход</a></li>"
+                . "<li><a href=\"registration.php\" class=\"information-menu-item small-screen\">Регистрация</a></li>"
+            );
             ?>
             <li><a href="about.php" class="information-menu-item">О проекте</a></li>
             <li><a href="statements.php" class="information-menu-item">Общие положения</a></li>
@@ -69,12 +71,12 @@
             <li><a href="about.php" class="information-menu-item">О проекте</a></li>
             <li><a href="contacts.php" class="information-menu-item">Контакты</a></li>
             <?php
-                echo (
-                    isset($_SESSION['name']) 
-                    ?   "<li><a href=\"user-info.php\" class=\"information-menu-item\">" . $_SESSION['name'] . "</a></li>" 
-                    :   "<li><a href=\"login.php\" class=\"information-menu-item\">Вход</a></li>"
-                        . "<li><a href=\"registration.php\" class=\"information-menu-item\">Регистрация</a></li>"
-                );
+            echo(
+            isset($_SESSION['name'])
+                ? "<li><a href=\"user-info.php\" class=\"information-menu-item\">" . $_SESSION['name'] . "</a></li>"
+                : "<li><a href=\"login.php\" class=\"information-menu-item\">Вход</a></li>"
+                . "<li><a href=\"registration.php\" class=\"information-menu-item\">Регистрация</a></li>"
+            );
             ?>
             <hr>
             <li><a href="statements.php" class="information-menu-item">Общие положения</a></li>

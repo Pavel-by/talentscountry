@@ -234,7 +234,7 @@
 }
 @media (max-width: 1000px) {
   .page-limiter {
-    margin: 52px auto auto auto;
+    margin: 0 auto auto auto;
   }
   .content {
     margin-left: 0px;
@@ -256,7 +256,7 @@
 }
 @media (min-width: 1001px) {
   .page-limiter {
-    margin: 82px auto auto auto;
+    margin: 30px auto auto auto;
   }
   #left-menu {
     display: inline-block;
@@ -374,13 +374,13 @@ div.logo {
 }
 div.logo h2 {
   font-size: 18px;
-  color: #d40000;
+  color: gray;
   font-weight: 600;
   padding: 4px;
   margin: 0 !important;
   border: none;
+  display: none;
   position: relative;
-  text-shadow: 0 0 1px #d4000060;
 }
 div.logo:hover h2 {
   text-decoration: none;
@@ -433,9 +433,7 @@ div.logo img {
   background-color: white;
   padding: 0;
   margin: 0;
-  top: 0;
-  left: 0;
-  position: fixed;
+  position: relative;
   width: 100%;
   height: 52px;
   z-index: 100;
@@ -474,9 +472,9 @@ div.logo img {
   margin: 0px;
   padding: 15px;
   font-size: 13px;
-  transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -webkit-transition: all .2s ease;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
   text-align: left;
   display: block;
   text-decoration: none;
@@ -496,9 +494,9 @@ div.logo img {
   font-size: 13px;
   color: #686868;
   text-align: center;
-  transition: all .2s ease;
-  -moz-transition: all .2s ease;
-  -webkit-transition: all .2s ease;
+  transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
   outline: none;
   text-decoration: none;
   font-weight: 400;
@@ -517,9 +515,9 @@ div.logo img {
   background-image: url("/images/arrow-down-white.png");
   background-size: 100%;
   background-position: center;
-  transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
 .menu-item.slide-down.opened::after {
   transform: translate(-50%, -50%) rotate(180deg);
@@ -561,9 +559,9 @@ div.logo img {
   transform: translate(-50%, 1px);
   z-index: 3;
   background-color: #FFFFFF;
-  transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
   clip-path: polygon(7px 0%, calc(100% - 7px) 0%, 100% 100%, 0 100%);
   padding-left: 10px;
   padding-right: 10px;
@@ -575,9 +573,9 @@ div.logo img {
   margin: 9px;
   border-radius: 100%;
   border: 1px solid #AAAAAA;
-  transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
   vertical-align: middle;
 }
 .choose-slide-image-button:hover {
@@ -600,7 +598,7 @@ div.logo img {
   text-indent: 0;
   padding: 10px;
   margin: 0;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
   color: #1B1B1B;
 }
@@ -617,7 +615,7 @@ div.logo img {
   margin: 0;
 }
 .small-info-text {
-  font-size: 17px;
+  font-size: 15px;
   color: #202020;
   text-indent: 0;
   padding: 7px;
@@ -696,9 +694,9 @@ div.logo img {
   font-weight: 400;
   white-space: nowrap;
   background-image: linear-gradient(150deg, #fcb11d, #d89102);
-  transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
 .bright-button:hover {
   cursor: pointer;
@@ -776,9 +774,9 @@ div.logo img {
   font-weight: 400;
   display: inline-block;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
-  transition: all .1s linear;
-  -moz-transition: all .1s linear;
-  -webkit-transition: all .1s linear;
+  transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
 }
 .left-menu-button:hover {
   color: white;
@@ -870,9 +868,9 @@ div.logo img {
   display: inline-block;
   color: #686868;
   font-size: 14px;
-  transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
   text-decoration: none;
   white-space: nowrap;
   font-weight: 400;
@@ -893,9 +891,12 @@ div.logo img {
   background-color: white;
   width: 100%;
 }
+.right {
+  text-align: right;
+}
 p {
-  font-size: 18px;
-  color: #3d3d3d;
+  font-size: 15px;
+  color: #121212;
   padding: 10px;
   text-indent: 0;
   margin: 0;
@@ -974,7 +975,7 @@ h3 {
 b,
 .bold {
   font-weight: 500;
-  color: #2c2c2c;
+  color: #111111;
 }
 .normal {
   font-weight: normal;
@@ -990,7 +991,7 @@ ul.content-ul {
   color: #3d3d3d;
 }
 .content-ul li {
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px;
   text-indent: 0;
   margin: 0;
@@ -1132,7 +1133,7 @@ a.download:hover {
 .text-input.error:focus {
   border-color: red;
 }
-.submit-button {
+.input input-submit {
   padding: 10px;
   margin: 10px;
   background-image: linear-gradient(150deg, #5b4cdd, #3225ac);
@@ -1146,18 +1147,18 @@ a.download:hover {
   -moz-transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
 }
-.submit-button:hover {
+.input input-submit:hover {
   background-image: linear-gradient(150deg, #4c3dd8, #3225ac);
   cursor: pointer;
 }
-.submit-button:active {
+.input input-submit:active {
   transform: scale(0.95);
 }
-.submit-button:disabled {
+.input input-submit:disabled {
   background-image: linear-gradient(150deg, #6656f3, #6656f3);
   color: white;
 }
-.submit-button:disabled:hover {
+.input input-submit:disabled:hover {
   cursor: not-allowed;
   background-color: #6bbddd;
   color: white;
@@ -1170,9 +1171,9 @@ a.download:hover {
   padding: 10px;
   margin: 10px;
   width: calc(100% - 20px);
-  transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -webkit-transition: all .2s linear;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
 }
 .button-choose:hover {
   color: #2e2e2e;
@@ -1451,6 +1452,8 @@ divider {
   border-color: #003f78;
   background-image: linear-gradient(-180deg, #2a5ee2 0%, #03619a 90%);
   cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 .input-submit:active {
   box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
@@ -1461,14 +1464,36 @@ divider {
   border-color: #cccccc;
 }
 .task-picker-competition {
-  display: block;
   margin: 5px;
   border-radius: 3px;
   background-color: white;
   border: 1px solid #f0f0f0;
   cursor: pointer;
 }
+.task-picker-competition > span {
+  padding: 5px;
+  color: #343434;
+  font-size: 14px;
+}
 .task-picker-competition.chosen {
   background-color: rgba(120, 210, 255, 0.19);
+}
+.input.full-width {
+  width: calc(100% - 10px);
+}
+textarea {
+  resize: vertical;
+}
+.inline-card {
+  padding: 1px 6px;
+  margin: 0 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ececec;
+  background-color: #f7f7f7;
+  /*-webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.22);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.22);*/
 }
 /*# sourceMappingURL=style.css.map */

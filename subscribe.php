@@ -104,11 +104,11 @@ include( "header.php" );
                     <h3>Оформить подписку</h3>
                     <p class="input-header">E-mail</p>
                     <div>
-                        <input type="email" name="email" class="text-input email"
+                        <input type="email" name="email" class="input input-text email"
                                style="width: 300px;">
                     </div>
                     <div>
-                        <input type="submit" class="submit-button">
+                        <input type="submit" class="input input-submit">
                     </div>
 
                 </form>
@@ -117,11 +117,11 @@ include( "header.php" );
                     <h3 class="red">Отписаться</h3>
                     <p class="input-header">E-mail</p>
                     <div>
-                        <input type="email" name="email" class="text-input email"
+                        <input type="email" name="email" class="input input-text email"
                                style="width: 300px;">
                     </div>
                     <div>
-                        <input type="submit" class="submit-button">
+                        <input type="submit" class="input input-submit">
                     </div>
 
                 </form>

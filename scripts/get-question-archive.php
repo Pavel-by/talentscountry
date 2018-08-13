@@ -1,8 +1,8 @@
 <?php
 
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'] . '/system/constants.php';
-if (constants::PAYMENT_FOR_DOWNLOAD and (!isset($_SESSION['userkey']) or !isset($_SESSION['usertype']) or $_SESSION['usertype'] != 1)){
+require_once $_SERVER['DOCUMENT_ROOT'] . '/system/configuration.php';
+if (conf["payment-for-download"] and (!isset($_SESSION['userkey']) or !isset($_SESSION['usertype']) or $_SESSION['usertype'] != 1)){
     echo "<h1>Недостаночно прав</h1>";
     exit();
 }

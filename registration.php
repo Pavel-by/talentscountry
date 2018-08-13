@@ -182,28 +182,28 @@ include( 'header.php' );
 
                 <h3 class="form-header">Фамилия, имя, отчество организатора (учителя) </h3>
                 <div>
-                    <input type="text" name="name" class="text-input">
+                    <input type="text" name="name" class="input input-text full-width">
                     <span class="input-error"></span>
                 </div>
                 <divider></divider>
 
                 <h3 class="form-header">Область/край (автономной округ, иное)</h3>
                 <div>
-                    <input type="text" name="region" class="text-input">
+                    <input type="text" name="region" class="input input-text full-width">
                     <span class="input-error"></span>
                 </div>
                 <divider></divider>
 
                 <h3 class="form-header">Город (село, поселок, хутор, деревня, иное)</h3>
                 <div>
-                    <input type="text" name="city" class="text-input">
+                    <input type="text" name="city" class="input input-text full-width">
                     <span class="input-error"></span>
                 </div>
                 <divider></divider>
 
                 <h3 class="form-header">Наименование и номер школы</h3>
                 <div>
-                    <input type="text" name="school" class="text-input">
+                    <input type="text" name="school" class="input input-text full-width">
                     <span class="input-error"></span>
                 </div>
                 <divider></divider>
@@ -220,21 +220,21 @@ include( 'header.php' );
 
                 <h3 class="form-header">Количество учителей (организаторов)</h3>
                 <div>
-                    <input type="text" name="teachers" class="text-input">
+                    <input type="text" name="teachers" class="input input-text full-width">
                     <span class="input-error"></span>
                 </div>
                 <divider></divider>
 
                 <h3 class="form-header">Количество участников</h3>
                 <div>
-                    <input type="text" name="participants" class="text-input">
+                    <input type="text" name="participants" class="input input-text full-width">
                     <span class="input-error"></span>
                 </div>
                 <divider></divider>
 
                 <h3 class="form-header">Электронный адрес</h3>
                 <div>
-                    <input type="text" name="email" class="text-input" autocomplete="off"
+                    <input type="text" name="email" class="input input-text full-width" autocomplete="off"
                            autocorrect="off">
                     <span class="input-error"></span>
                 </div>
@@ -242,20 +242,20 @@ include( 'header.php' );
 
                 <h3 class="form-header">Контактный телефон</h3>
                 <div>
-                    <input type="text" name="phone" class="text-input">
+                    <input type="text" name="phone" class="input input-text full-width">
                     <span class="input-error"></span>
                 </div>
                 <divider></divider>
 
                 <h3 class="form-header">Пароль для входа в систему</h3>
                 <div>
-                    <input type="password" name="password" class="text-input">
+                    <input type="password" name="password" class="input input-text full-width">
                     <span class="input-error"></span>
                 </div>
                 <divider></divider>
                 <span class="input-error"
                       id="form-error">Присутствуют ошибки при заполнении полей</span>
-                <input type="submit" class="submit-button" value="Зарегистрироваться">
+                <input type="submit" class="input input-submit" value="Зарегистрироваться">
             </form>
         </div>
     </div>

@@ -111,7 +111,7 @@
                                         <p class="bold" style="white-space: nowrap;">Начинать загрузку со строки</p>
                                     </td>
                                     <td>
-                                        <input name="startRow" type="text" class="text-input" value="1" style="width: 32px; text-align: center;">
+                                        <input name="startRow" type="text" class="input input-text" value="1" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                                 <tr>
@@ -119,7 +119,7 @@
                                         <p class="bold" style="white-space: nowrap;">Индекс столбца Id</p>
                                     </td>
                                     <td>
-                                        <input name="idColumn" type="text" class="text-input" value="A" style="width: 32px; text-align: center;">
+                                        <input name="idColumn" type="text" class="input input-text" value="A" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                                 <tr>
@@ -127,7 +127,7 @@
                                         <p class="bold" style="white-space: nowrap;">Индекс столбца Имя участника</p>
                                     </td>
                                     <td>
-                                        <input name="nameColumn" type="text" class="text-input" value="B" style="width: 32px; text-align: center;">
+                                        <input name="nameColumn" type="text" class="input input-text" value="B" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                                 <tr>
@@ -135,7 +135,7 @@
                                         <p class="bold" style="white-space: nowrap;">Индекс столбца Название конкурса</p>
                                     </td>
                                     <td>
-                                        <input name="competitionColumn" type="text" class="text-input" value="C" style="width: 32px; text-align: center;">
+                                        <input name="competitionColumn" type="text" class="input input-text" value="C" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                                 <tr>
@@ -143,7 +143,7 @@
                                         <p class="bold" style="white-space: nowrap;">Индекс столбца Класс</p>
                                     </td>
                                     <td>
-                                        <input name="classColumn" type="text" class="text-input" value="D" style="width: 32px; text-align: center;">
+                                        <input name="classColumn" type="text" class="input input-text" value="D" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                                 <tr>
@@ -151,7 +151,7 @@
                                         <p class="bold" style="white-space: nowrap;">Индекс столбца Баллы</p>
                                     </td>
                                     <td>
-                                        <input name="pointsColumn" type="text" class="text-input" value="E" style="width: 32px; text-align: center;">
+                                        <input name="pointsColumn" type="text" class="input input-text" value="E" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                                 <tr>
@@ -159,7 +159,7 @@
                                         <p class="bold" style="white-space: nowrap;">Индекс столбца Рейтинг</p>
                                     </td>
                                     <td>
-                                        <input name="ratingColumn" type="text" class="text-input" value="F" style="width: 32px; text-align: center;">
+                                        <input name="ratingColumn" type="text" class="input input-text" value="F" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                                 <tr>
@@ -167,7 +167,7 @@
                                         <p class="bold" style="white-space: nowrap;">Индекс столбца Место</p>
                                     </td>
                                     <td>
-                                        <input name="placeColumn" type="text" class="text-input" value="G" style="width: 32px; text-align: center;">
+                                        <input name="placeColumn" type="text" class="input input-text" value="G" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                                 <tr>
@@ -175,18 +175,18 @@
                                         <p class="bold" style="white-space: nowrap;">Индекс столбца Почтовый индекс</p>
                                     </td>
                                     <td>
-                                        <input name="indexColumn" type="text" class="text-input" value="H" style="width: 32px; text-align: center;">
+                                        <input name="indexColumn" type="text" class="input input-text" value="H" style="width: 32px; text-align: center;">
                                     </td>
                                 </tr>
                             </table>
                             <hr>
-                            <div class="input-file-parent submit-button inline-block">
+                            <div class="input-file-parent input input-submit inline-block">
                                 <input type="file" name="file" id="input-file">Выбрать файл
                             </div>
 
                             <div id="choosen-files"></div>
 
-                            <input type="submit" class="submit-button" value="Добавить">
+                            <input type="submit" class="input input-submit" value="Добавить">
                         </form>
                     </div>
                 </div>
