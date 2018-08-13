@@ -10,8 +10,8 @@
                 echo "<li><a href=\"/user-info.php\" class=\"input full-width input-submit big-screen center\">Аккаунт</a></li>";
             } else {
                 echo "<li class='flex-block flex-left flex-middle flex-nowrap flex-row'>"
-                    . "<a href=\"/login.php\" class=\"input full-width input-submit big-screen center\">Вход</a>"
-                    . "<a href=\"/registration.php\" class=\"input full-width input-submit big-screen center\">Регистрация</a>"
+                    . "<a href=\"/login.php\" class=\"input input-submit big-screen center\">Вход</a>"
+                    . "<a href=\"/registration.php\" class=\"input input-submit big-screen center\">Регистрация</a>"
                     . "</li>";
             }
             ?>
