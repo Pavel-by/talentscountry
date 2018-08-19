@@ -1445,7 +1445,7 @@ divider {
   font-weight: 600;
   color: white;
   outline: none;
-  border: 1px solid #03619a;
+  border: 0px solid #03619a;
 }
 .input-submit:hover,
 .input-submit:focus {
