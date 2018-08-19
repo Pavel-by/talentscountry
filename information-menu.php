@@ -16,7 +16,7 @@
             }
             ?>
 
-            <li><a href="/" class="information-menu-item small-screen">Главная</a></li>
+            <li><a href="/" class="information-menu-item">Главная</a></li>
             <li><a href="about.php" class="information-menu-item small-screen">О проекте</a></li>
             <li><a href="contacts.php" class="information-menu-item small-screen">Контакты</a></li>
             <?php

@@ -5,7 +5,7 @@
     <!--div class="main-background">
         <div id="top-block" class="limit-block flex-block flex-between flex-row flex-middle" style="border-bottom: 1px solid rgba(128, 128, 128, 0.432);">
             <p style="text-align: left; color: black; font-size: 18px; padding-left: 60px; padding-right: 60px; padding-top: 30px; padding-bottom: 30px;">
-                help@olympforum.ru<br>+7 (903) 949 55 41<br>+7 (923) 00 483 02
+                help@stranatalantow.ru<br>+7 (903) 949 55 41<br>+7 (923) 00 483 02
             </p>
             <p style="color: black; font-size: 18px; padding-left: 60px; padding-right: 60px; padding-top: 30px; padding-bottom: 30px;">
                 <a href="registration.php" class="bright-button">Принять участие!</a>

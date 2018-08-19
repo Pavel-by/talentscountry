@@ -31,11 +31,11 @@
                     <divider></divider>
 
                     <p class="bold">Наш сайт в интернете:</p>
-                    <p class="form-hint"><a href="http://olympforum.ru/">http://olympforum.ru/</a></p>
+                    <p class="form-hint"><a href="http://stranatalantow.ru/">http://stranatalantow.ru/</a></p>
                     <divider></divider>
 
                     <p class="bold">E-mail поддержки:</p>
-                    <p class="form-hint">help@olympforum.ru</p>
+                    <p class="form-hint">help@stranatalantow.ru</p>
 
                 </div>
             </div>

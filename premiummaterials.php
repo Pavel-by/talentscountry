@@ -9,7 +9,7 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico">
     <?php
-        echo include("scripts/img-watcher.php");
+        include("scripts/img-watcher.php");
     ?>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function() {

@@ -56,7 +56,7 @@
                         <div class="card">
                             <p>Оплатить онлайн иными способами. Для этого сделайте запрос реквизитов
                             на адрес тех.
-                            поддержки сайта <b>help@olympforum.ru</b></p>
+                            поддержки сайта <b>help@stranatalantow.ru</b></p>
                         </div>
                     <div>
                         <div class="download">

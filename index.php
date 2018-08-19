@@ -125,15 +125,15 @@
                         <p class="bold">Скачать дополнительные материалы:</p>
                         <div class="download">
                             <img src="images/download.png">
-                            <a href="files/welcome_strana_talantov.docx">Скачать приглашение</a>
+                            <a href="files/welcome.docx">Скачать приглашение</a>
                         </div>
                         <div class="download">
                             <img src="images/download.png">
-                            <a href="files/prikaz_strana.docx">Скачать приказ о проведении</a>
+                            <a href="files/prikaz.docx">Скачать приказ о проведении</a>
                         </div>
                         <div class="download">
                             <img src="images/download.png">
-                            <a href="files/reglament_strana_talantov.docx">Скачать регламент конкурса</a>
+                            <a href="files/reglament.docx">Скачать регламент конкурса</a>
                         </div>
                     </div>
                 </div>
