@@ -5,6 +5,7 @@
 <div id="left-menu">
     <div class="information-menu">
         <ul>
+            <li><a href="/" class="information-menu-item">Главная</a></li>
             <?php
             if (isset($_SESSION['userkey'])) {
                 echo "<li><a href=\"/user-info.php\" class=\"input full-width input-submit big-screen center\">Аккаунт</a></li>";
@@ -15,8 +16,6 @@
                     . "</li>";
             }
             ?>
-
-            <li><a href="/" class="information-menu-item">Главная</a></li>
             <li><a href="about.php" class="information-menu-item small-screen">О проекте</a></li>
             <li><a href="contacts.php" class="information-menu-item small-screen">Контакты</a></li>
             <?php
@@ -48,17 +47,6 @@
             <li><a href="comments.php" class="information-menu-item">Отзывы</a></li>
         </ul>
     </div>
-    <!--div class="social-block">
-        <a class="share" href="https://www.facebook.com/Страна талантов-601908700163839" target="_blank" title="Facebook">
-            <img src="http://olympforum.ru/images/facebook-icon.png" alt="facebook">
-        </a>
-        <a class="share" href="https://vk.com/olympforum" target="_blank" title="ВКонтакте">
-            <img src="http://olympforum.ru/images/vk-icon.png" alt="VK">
-        </a>
-        <a class="share" href="https://www.ok.ru/group/53730148352145" target="_blank" title="Одноклассники">
-            <img src="http://olympforum.ru/images/odnoklassniki-icon.png" alt="Odnoklassniki">
-        </a>
-    </div-->
 </div>
 
 <div id="left-menu-small">
