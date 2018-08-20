@@ -14,7 +14,7 @@ include("scripts/check-admin-permissions.php")
     <script type="text/javascript" src="/module/message.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico">
     <script type="text/javascript">
-        function addAdmin(name, email, password, confirmPassword) {
+        function addAdmin(name, email, password, confirmPassword, callback = function(isAdded){}) {
             var message = Message.create({header: "Загрузка", text: "Пожалуйста, подождите", closeable: false});
             $.ajax({
                 url: "/scripts/register-admin.php",
@@ -30,24 +30,33 @@ include("scripts/check-admin-permissions.php")
                     message.hide();
                     if (d.error) {
                         Message.create({header: "Ошибка", text: d.texterror});
+                        callback(false);
                     } else {
                         Message.create({header: "Успешно", text: d.texterror});
+                        callback(true);
                     }
                 },
                 error: function() {
                     message.hide();
                     Message.create({header: "Ошибка", text: "Ошибка при создании пользователя"});
+                    callback(false);
                 }
             });
         }
 
         $(document).ready(function() {
             $("#form").submit(function() {
+                var form = this;
                 addAdmin(
                     $(this).find('[name=name]').val(),
                     $(this).find('[name=email]').val(),
                     $(this).find('[name=password]').val(),
-                    $(this).find('[name=confirmPassword]').val()
+                    $(this).find('[name=confirmPassword]').val(),
+                    added => {
+                        if (added) {
+                            form.reset();
+                        }
+                    }
                 );
                 return false;
             });
