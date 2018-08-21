@@ -61,11 +61,13 @@
             if (result != true) {
                 $(elem).addClass('error');
                 $(elem).next().html(result);
+                $(elem).next().show(100);
                 $('#form-error').slideDown(animation);
                 return false;
 
             } else {
                 $(elem).removeClass('error');
+                $(elem).next().hide(100);
                 $('#form-error').slideUp(animation);
                 return true;
             }
