@@ -8,7 +8,9 @@ error_reporting(E_ALL);
 
 set_time_limit(60 * 60 * 2);
 
-include(ROOT . "/class/diploma.php");
+echo json_encode(array(), JSON_UNESCAPED_UNICODE);
+
+/*include(ROOT . "/class/diploma.php");
 
 $diploma = new Diploma(ROOT);
 

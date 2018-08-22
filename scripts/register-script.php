@@ -72,11 +72,10 @@ if (isset($_GET['post'])) {
 }
 
 //Номера классов
-$competitions = array();
+$classes = "{}";
 if ( isset( $_GET[ 'competitions' ] ) ) {
-    $competitions = json_decode( $_GET[ 'competitions' ], true );
+    $classes = mysqli_real_escape_string($link, $_GET['competitions']);
 }
-$classes = json_encode($competitions, JSON_UNESCAPED_UNICODE);
 
 //Телефон
 $phone = mysqli_real_escape_string(
