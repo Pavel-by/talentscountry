@@ -70,10 +70,12 @@
 
             if (result != true) {
                 $(elem).addClass('error');
-                $(elem).next().html(result);
+                $(elem).next(".input-error").html(result);
+                $(elem).next(".input-error").show();
                 $('#form-error').slideDown(animation);
             } else {
                 $(elem).removeClass('error');
+                $(elem).next(".input-error").hide();
                 $('#form-error').slideUp(animation);
             }
 
@@ -92,12 +94,14 @@
             }
             if (result != true) {
                 $(elem).addClass('error');
-                $(elem).next().html(result);
+                $(elem).next(".input-error").html(result);
+                $(elem).next(".input-error").show();
                 $('#form-error').slideDown(animation);
                 return false;
 
             } else {
                 $(elem).removeClass('error');
+                $(elem).next(".input-error").hide();
                 $('#form-error').slideUp(animation);
                 return true;
             }
