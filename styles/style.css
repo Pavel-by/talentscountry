@@ -1116,7 +1116,7 @@ a.download:hover {
 }
 .text-input + .input-error {
   opacity: 0;
-  height: 0;
+  display: block;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -1124,7 +1124,6 @@ a.download:hover {
 }
 .text-input.error + .input-error {
   opacity: 1;
-  height: auto;
 }
 .text-input:focus {
   outline: none;
