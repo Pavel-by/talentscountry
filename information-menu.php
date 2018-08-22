@@ -45,6 +45,7 @@
             <li><a href="paymentreceipt.php" class="information-menu-item">Оплата</a></li>
             <li><a href="job.php" class="information-menu-item">Вакансии</a></li>
             <li><a href="comments.php" class="information-menu-item">Отзывы</a></li>
+            <li><a href="contract.php" class="information-menu-item">Договор оферта</a></li>
         </ul>
     </div>
 </div>
@@ -85,6 +86,7 @@
             <li><a href="paymentreceipt.php" class="information-menu-item">Оплата</a></li>
             <li><a href="job.php" class="information-menu-item">Вакансии</a></li>
             <li><a href="comments.php" class="information-menu-item">Отзывы</a></li>
+            <li><a href="contract.php" class="information-menu-item">Договор оферта</a></li>
         </ul>
     </div>
     <!--div class="social-block">

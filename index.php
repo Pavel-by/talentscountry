@@ -30,6 +30,12 @@
                     входят в круг наших понятий.<br>
                     Козьма Прутков
                 </p>
+                <div class="center">
+                    <div class="download">
+                        <img src="images/download.png">
+                        <a href="files/presentation.docx">Скачать презентацию</a>
+                    </div>
+                </div>
                 <h3>Олимпиады проводятся по следующим дисциплинам:</h3>
                 <ul>
                     <li>
