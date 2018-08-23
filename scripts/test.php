@@ -8,17 +8,18 @@ error_reporting(E_ALL);
 
 set_time_limit(60 * 60 * 2);
 
-echo json_encode(array(), JSON_UNESCAPED_UNICODE);
+/*
+//TESTING DIPLOMA
 
-/*include(ROOT . "/class/diploma.php");
+include(ROOT . "/class/diploma.php");
 
 $diploma = new Diploma(ROOT);
 
 $diploma->diploma(false, ROOT . "/test/school.png", array("Pavel", "Liceum"), Diploma::TYPE_THANKS_TEACHER);
-
+*/
 
 /*
-TESTING NEWSLETTER
+//TESTING NEWSLETTER
 
 include(ROOT . "/scripts/newsletter-script.php");
 
@@ -26,22 +27,22 @@ $newsletter = new Newsletter();
 $newsletter->setHost("smtp.beget.ru");
 $newsletter->setLogin("help@stranatalantow.ru");
 $newsletter->setPassword("kJsr4ioE");
-$newsletter->setTitle("Пробуем");
+$newsletter->setTitle("Лист рассылки");
 $newsletter->setFrom("help@stranatalantow.ru");
 $newsletter->setFromName("Pavel");
 
-$data = [
-    "email" => "meyejebew@poly-swarm.com",
-    "unsubscribe" => [
+$data = array(
+    "email" => "alvys74@inbox.ru",
+    "unsubscribe" => array(
         "link" => "stranatalantow.ru/unsubscribe-one-click.php",
         "email" => "help@stranatalantow.ru"
-    ],
+    ),
     "name" => "Alex",
     "text" => file_get_contents(ROOT . "/newsletter/newsletter-list-inline-css.html")
-];
+);
 
-echo($newsletter->send($data) ? "true" : "false");
-*/
+echo($newsletter->send($data) ? "true" : "false");*/
+
 
 /**require_once ROOT . "/class/Tasks.php";
  *
