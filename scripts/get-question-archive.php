@@ -38,17 +38,14 @@ if ($zip->open($zipName, ZIPARCHIVE::CREATE) !== TRUE){
 
 $competitions = json_decode($rez['classes'], true);
 foreach ($competitions as $eng=>$rus){
-    echo "ENG = $eng, RUS = $rus";
     $filesDir = $filesFolder . $eng;
     $zipDir = $rus;
     foreach (scandir($filesDir) as $file) {
         if ($file == "." or $file == "..") continue;
         $zip->addFile($filesDir . "/" . $file, $zipDir . "/" . $file);
-        echo "ADD " . $filesDir . "/" . $file . " AS $zipDir/$file<br>";
     }
 }
 $zip->addFile(ROOT . "/files/blank_otvetov.png", "blank_otvetov.png");
-echo ROOT . "/files/blank_otvetov.png";
 $zip->close();
 if (file_exists($zipName)){
     header('Content-type: application/zip');
