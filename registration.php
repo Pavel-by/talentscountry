@@ -12,7 +12,7 @@
     <script type="text/javascript"
             src="/module/message.js?ver=<?php echo filemtime( "module/message.js" ); ?>"></script>
     <link rel="shortcut icon" href="images/favicon.ico">
-    <script type="text/javascript" src="/module/metrika.js"></script>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/module/metrika.php"); ?>
     <?php include( $_SERVER[ 'DOCUMENT_ROOT' ] . "/module/task-picker.php" );
     include( $_SERVER[ 'DOCUMENT_ROOT' ] . "/module/Tasks.php" ); ?>
     <script type="text/javascript">

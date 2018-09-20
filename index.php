@@ -7,7 +7,7 @@
     <link type="text/css" rel="stylesheet" href="style.css?date=<?php echo filemtime("styles/style.css"); ?>">
     <script type="text/javascript" src="scripts/js/jquery.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="/module/metrika.js"></script>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/module/metrika.php"); ?>
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 

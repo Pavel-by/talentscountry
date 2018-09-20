@@ -4,7 +4,7 @@
         <title>Отписаться</title>
         <meta charset="utf-8">
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
-        <script type="text/javascript" src="/module/metrika.js"></script>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . "/module/metrika.php"); ?>
         <style type="text/css">
             * {
                 text-align: left;

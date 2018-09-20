@@ -22,7 +22,7 @@
     <script type="text/javascript" src="scripts/js/jquery.js"></script>
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <script type="text/javascript" src="/module/message.js"></script>
-    <script type="text/javascript" src="/module/metrika.js"></script>
+    <?php include($_SERVER['DOCUMENT_ROOT'] . "/module/metrika.php"); ?>
     <link rel="shortcut icon" href="images/favicon.ico">
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function(){
