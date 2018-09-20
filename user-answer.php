@@ -1,6 +1,7 @@
 <?php
 include( 'scripts/check-autorization.php' );
 include( 'scripts/update-userinfo.php' );
+require_once 'system/configuration.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -148,8 +149,8 @@ include( "header.php" );
         <div class="limit-block">
             <div>
                 <h1 class="page-title">Отправка решений</h1>
-                <div class="<?php if ( !isset( $_SESSION[ 'usertype' ] ) or
-                    $_SESSION[ 'usertype' ] != 1 ) echo 'hidden'; ?>">
+                <div class="<?php if ( conf["payment-for-answer"] and (!isset( $_SESSION[ 'usertype' ] ) or
+                    $_SESSION[ 'usertype' ] != 1 ) ) echo 'hidden'; ?>">
                     <p>В этом разделе Вы можете отправить заполненные и отсканированные бланки
                         ответов.</p>
                     <div class="card">
@@ -175,7 +176,7 @@ include( "header.php" );
                 </div>
 
                 <?php
-                if ( !isset( $_SESSION[ 'usertype' ] ) or $_SESSION[ 'usertype' ] != 1 ) {
+                if ( conf["payment-for-answer"] and (!isset( $_SESSION[ 'usertype' ] ) or $_SESSION[ 'usertype' ] != 1 )) {
                     echo "<p class='important-text'>Прежде чем отправить решения, Вам необходимо <a href='user-payment.php'>загрузить</a> квитанцию об оплате. Она будет проверена в ручном режиме и в течение суток Вам откроют доступ к загрузке решений.</p>";
                 }
                 ?>

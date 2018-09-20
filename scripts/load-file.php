@@ -1,6 +1,7 @@
 <?php
     require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/yandex-class.php';
     require_once $_SERVER['DOCUMENT_ROOT'] . '/scripts/error-script.php';
+    require_once $_SERVER['DOCUMENT_ROOT'] . '/system/configuration.php';
     //use Yandex\Disk\DiskClient;
 
     @session_start();
@@ -39,7 +40,7 @@
                 $dirname = 'payment';
                 break;
             case 'answer':
-                if (!isset($_SESSION['usertype']) or $_SESSION['usertype'] != 1){
+                if (conf["payment-for-answer"] and (!isset($_SESSION['usertype']) or $_SESSION['usertype'] != 1)){
                     $arr['error'] = true;
                     $arr['texterror'] = "Недостаточно прав.";
                 }
