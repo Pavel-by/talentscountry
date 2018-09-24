@@ -92,7 +92,6 @@ class Diploma
 
         //Создаем объект картинки
         $img = new TextOnImage($filePath);
-        echo "Path is <$filePath>";
         //Если не удалось создать
         if (!$img) {
             return false;
