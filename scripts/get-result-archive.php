@@ -89,10 +89,6 @@ while ($line = mysqli_fetch_array($sql)) {
             );
             break;
     }
-
-    echo "Create file<br>";
-
-    echo "Save to path " . ROOT . "/results/$id/" . $line['name'] . ", " . $line['competition'] . ".jpg <br>";
     $dip->diploma(
         false,
         ROOT . "/results/$id/" . $line['name'] . ", " . $line['competition'] . ".jpg",
